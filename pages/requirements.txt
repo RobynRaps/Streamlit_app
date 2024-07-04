@@ -1,8 +1,3 @@
 streamlit
 matplotlib
 wordcloud
-os
-spacy
-collections
-textblob
-pandas

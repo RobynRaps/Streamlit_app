@@ -1,0 +1,2 @@
+C:\Users\robyn\anaconda3
+C:\Users\robyn\anaconda3\envs\sql_packages

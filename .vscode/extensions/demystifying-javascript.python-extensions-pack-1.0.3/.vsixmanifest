@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+		<Metadata>
+			<Identity Language="en-US" Id="python-extensions-pack" Version="1.0.3" Publisher="demystifying-javascript" />
+			<DisplayName>Python Development Extensions Pack</DisplayName>
+			<Description xml:space="preserve">Everything you need for Python development. Git Extensions Pack Included</Description>
+			<Tags>python extension pack,python,python debugging,python debugger,python preview,python indent,python test explorer,pylance,python snippets,python3 snippets,python resource monitors,fullstack,fullstack developer,fullstack development,django,django snippets,python lint,web developer,web development,snippets,intellicode,code spell checker,unittest,real-time,display,variable,explorer,visualizer,preview,indent,dedent,indentation,whitespace,python3,test,testing,pytest,typehint,completion,autocompletion,parameter,refactoring,json,scratchpad,formatting,black,docstring,google,numpy,sphinx,generator,autodocstring,docblockr,documentation,pydocstring,jupyter,notebook,notebookKernelJupyterNotebook,multi-root ready,web,performance,resource,resources,monitor,counter,task manager,memory,memory counter,memory monitor,cpu,cpu counter,cpu monitor,spell,checker,spelling,spellchecker,git,__web_extension</Tags>
+			<Categories>Extension Packs,Snippets,Linters,Programming Languages,Formatters,Other</Categories>
+			<GalleryFlags>Public</GalleryFlags>
+			
+			<Properties>
+				<Property Id="Microsoft.VisualStudio.Code.Engine" Value="^1.76.0" />
+				<Property Id="Microsoft.VisualStudio.Code.ExtensionDependencies" Value="" />
+				<Property Id="Microsoft.VisualStudio.Code.ExtensionPack" Value="xirider.livecode,cstrap.python-snippets,dongli.python-preview,KevinRose.vsc-python-indent,LittleFoxTeam.vscode-python-test-adapter,njqdev.vscode-python-typehint,sourcery.sourcery,mintlify.document,almenon.arepl,traBpUkciP.wolf,oderwat.indent-rainbow,njpwerner.autodocstring,deerawan.vscode-dash,thebarkman.vscode-djaneiro,EricSia.pythonsnippets,batisteo.vscode-django,kaih2o.python-resource-monitor,streetsidesoftware.code-spell-checker,donjayamanne.git-extension-pack" />
+				<Property Id="Microsoft.VisualStudio.Code.ExtensionKind" Value="workspace,web" />
+				<Property Id="Microsoft.VisualStudio.Code.LocalizedLanguages" Value="" />
+				
+				
+				<Property Id="Microsoft.VisualStudio.Services.Links.Source" Value="https://github.com/demystifying-javascript/python-extension-pack.git" />
+				<Property Id="Microsoft.VisualStudio.Services.Links.Getstarted" Value="https://github.com/demystifying-javascript/python-extension-pack.git" />
+				<Property Id="Microsoft.VisualStudio.Services.Links.GitHub" Value="https://github.com/demystifying-javascript/python-extension-pack.git" />
+				<Property Id="Microsoft.VisualStudio.Services.Links.Support" Value="https://github.com/demystifying-javascript/python-extension-pack/issues" />
+				<Property Id="Microsoft.VisualStudio.Services.Links.Learn" Value="https://github.com/demystifying-javascript/python-extension-pack" />
+				<Property Id="Microsoft.VisualStudio.Services.Branding.Color" Value="#f0efe7" />
+				<Property Id="Microsoft.VisualStudio.Services.Branding.Theme" Value="light" />
+				<Property Id="Microsoft.VisualStudio.Services.GitHubFlavoredMarkdown" Value="true" />
+				<Property Id="Microsoft.VisualStudio.Services.Content.Pricing" Value="Free"/>
+
+				
+				
+			</Properties>
+			<License>extension/LICENSE.txt</License>
+			<Icon>extension/images/icon.png</Icon>
+		</Metadata>
+		<Installation>
+			<InstallationTarget Id="Microsoft.VisualStudio.Code"/>
+		</Installation>
+		<Dependencies/>
+		<Assets>
+			<Asset Type="Microsoft.VisualStudio.Code.Manifest" Path="extension/package.json" Addressable="true" />
+			<Asset Type="Microsoft.VisualStudio.Services.Content.Details" Path="extension/README.md" Addressable="true" />
+<Asset Type="Microsoft.VisualStudio.Services.Content.Changelog" Path="extension/CHANGELOG.md" Addressable="true" />
+<Asset Type="Microsoft.VisualStudio.Services.Content.License" Path="extension/LICENSE.txt" Addressable="true" />
+<Asset Type="Microsoft.VisualStudio.Services.Icons.Default" Path="extension/images/icon.png" Addressable="true" />
+		</Assets>
+	</PackageManifest>

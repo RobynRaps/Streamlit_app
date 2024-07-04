@@ -1,0 +1,9 @@
+streamlit
+matplotlib
+wordcloud
+pickle
+os
+spacy
+collections
+textblob
+pandas

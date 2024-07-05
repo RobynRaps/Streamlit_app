@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 from collections import Counter
 #import spacy
 from textblob import TextBlob
+from PIL import Image
 import pandas as pd
 
 # Model Options with Absolute Paths
@@ -48,9 +49,14 @@ if st.session_state.page == 'home':
     # Create two columns with width ratio 1:4
 
         st.title("Welcome to StoryStream")
+        # this opens the image
+        image = Image.open("app_image.jpg") 
+
+# this displays the image
+        st.image(image, caption="My Image", use_column_width=True)
 
     # Display app image (centered)
-        st.image("app_image.jpg") 
+        #st.image("app_image.jpg") 
 
     # Rest of your home page content
         st.markdown(

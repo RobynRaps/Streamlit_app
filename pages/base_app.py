@@ -50,10 +50,10 @@ if st.session_state.page == 'home':
 
         st.title("Welcome to StoryStream")
         # this opens the image
-        image = Image.open("app_image.jpg") 
+        #image = Image.open("app_image.jpg") 
 
 # this displays the image
-        st.image(image, caption="My Image", use_column_width=True)
+        #st.image(image, caption="My Image", use_column_width=True)
 
     # Display app image (centered)
         #st.image("app_image.jpg") 

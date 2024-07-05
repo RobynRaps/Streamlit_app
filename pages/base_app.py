@@ -49,11 +49,8 @@ if st.session_state.page == 'home':
     # Create two columns with width ratio 1:4
 
         st.title("Welcome to StoryStream")
-        # this opens the image
-        #image = Image.open("app_image.jpg") 
+         
 
-# this displays the image
-        #st.image(image, caption="My Image", use_column_width=True)
 
     # Display app image (centered)
         #st.image("app_image.jpg") 
@@ -94,27 +91,21 @@ elif st.session_state.page == 'about_us':
         :black[To empower individuals and organizations to unlock the insights hidden within their text data.]
 
         **Our Team:**
+         
+        Neo Modibedi:  Experienced software engineer specializing in building scalable web applications.
+        
+        Thapelo Robyn Raphala:  Experienced software engineer specializing in building scalable web applications.
+        
+        Thandekile Sikhakhane:  Experienced software engineer specializing in building scalable web applications.
+        
+        Mbalenhle Lenepa:  Experienced software engineer specializing in building scalable web applications."
+
         """
     )
-    # Define a dictionary to store image paths for each team member
-    team_member_images = {
-        "Neo Modibedi": "NeoModibedi.jpg",  # Replace with actual image filenames
-        "Thapelo Robyn Raphala": "Robyn.jpg",
-        "Thandekile Sikhakhane": "Thandekile.jpg",
-        "Mbalenhle Lenepa": "Mbalenhle.jpg"
-    }
+    
 
-    # Create columns for each team member and display image and description
-    for member, image_file in team_member_images.items():
-        col1, col2 = st.columns([1, 3])  # Adjust column ratio as needed
 
-        # Display image in the first column (adjust width as needed)
-        with col1:
-            st.image(image_file, width=100)
-
-        # Display member description in the second column
-        with col2:
-            st.markdown(f"- **{member}:** Experienced software engineer specializing in building scalable web applications.")
+            
     st.markdown(
         """
         **Contact Us:**

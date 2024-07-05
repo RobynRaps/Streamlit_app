@@ -46,21 +46,14 @@ elif st.sidebar.button("Explore Data"):
 # Home Page
 if st.session_state.page == 'home':
     # Create two columns with width ratio 1:4
-    col1, col2 = st.columns([1, 4])  
 
-    # Display logo in the first column (adjust width as needed)
-    with col1:
-        st.image("logo.jpg", width=100)  # Replace with your actual logo file
-
-    # Display title in the second column
-    with col2:
         st.title("Welcome to StoryStream")
 
     # Display app image (centered)
-    st.image("app_image.jpg") 
+        st.image("app_image.jpg") 
 
     # Rest of your home page content
-    st.markdown(
+        st.markdown(
         """
         <div style="text-align: center;">
             <p style="font-size: 1.2em;">
@@ -71,16 +64,16 @@ if st.session_state.page == 'home':
         unsafe_allow_html=True,
     )
 
-    st.markdown(
+        st.markdown(
         """
         Story Stream app is your AI-powered editorial assistant, designed to help you stay ahead of the curve. Our platform harnesses cutting-edge machine learning to analyze your text data and extract valuable insights that can drive your content strategy.
         """
     )
 
-    with st.expander(":white[**Discover Story Stream's Key Features:**]"):
-        st.markdown("- **Predict:** **Uncover the topics and categories hidden within your news articles and social media posts**.")
-        st.markdown("- **Explore Data:** **Visualize trending keywords and phrases to identify hot topics and emerging stories**.")
-        st.markdown("- **About Us:** **Learn more about the team of data scientists and journalists behind Story Stream**.")
+        with st.expander(":white[**Discover Story Stream's Key Features:**]"):
+             st.markdown("- **Predict:** **Uncover the topics and categories hidden within your news articles and social media posts**.")
+             st.markdown("- **Explore Data:** **Visualize trending keywords and phrases to identify hot topics and emerging stories**.")
+             st.markdown("- **About Us:** **Learn more about the team of data scientists and journalists behind Story Stream**.")
 
 #about us page
 elif st.session_state.page == 'about_us':

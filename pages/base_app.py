@@ -50,7 +50,7 @@ if st.session_state.page == 'home':
 
     # Display logo in the first column (adjust width as needed)
     with col1:
-        st.image("logo1.jpg", width=100)  # Replace with your actual logo file
+        st.image("logo.jpg", width=100)  # Replace with your actual logo file
 
     # Display title in the second column
     with col2:

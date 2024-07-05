@@ -4,7 +4,7 @@ import os
 from wordcloud import WordCloud, STOPWORDS  # Correct import
 import matplotlib.pyplot as plt
 from collections import Counter
-import spacy
+#import spacy
 from textblob import TextBlob
 import pandas as pd
 
@@ -201,23 +201,23 @@ elif st.session_state.page == 'explore_data':
         
 
     # Named Entity Recognition (NER)
-    st.subheader("Named Entity Recognition:")
-    with st.spinner('Loading Spacy model...'):
-        nlp = spacy.load("en_core_web_sm")  
+    #st.subheader("Named Entity Recognition:")
+    #with st.spinner('Loading Spacy model...'):
+     #   nlp = spacy.load("en_core_web_sm")  
 
-    doc = nlp(text)
+    #doc = nlp(text)
 
     # Extract entities and their labels
-    entities = [(ent.text, ent.label_) for ent in doc.ents]
-    if entities:
-        st.write("Entities found in the text:")
-        for ent in entities:
-            st.write(f"- {ent[0]} ({ent[1]})")
-    else:
-        st.write("No named entities found in the text.")
+    #entities = [(ent.text, ent.label_) for ent in doc.ents]
+    #if entities:
+     #   st.write("Entities found in the text:")
+      #  for ent in entities:
+       #     st.write(f"- {ent[0]} ({ent[1]})")
+    #else:
+     #   st.write("No named entities found in the text.")
         # Create and display the bar chart
-        entity_df = pd.DataFrame(entity_counts.items(), columns=['Entity', 'Frequency'])
-        st.bar_chart(entity_df.set_index('Entity'))  # Display NER bar chart
+      #  entity_df = pd.DataFrame(entity_counts.items(), columns=['Entity', 'Frequency'])
+       # st.bar_chart(entity_df.set_index('Entity'))  # Display NER bar chart
         
         # Categorize sentiment
         if sentiment > 0:
